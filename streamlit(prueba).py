@@ -52,8 +52,14 @@ with col1:
 with col2:
     m_dep = st.slider('Grosor del telefono (cm)', min_value = 0.1, max_value = 1.0)
     mobile_wt = st.slider('Peso del dispositivo (g)', min_value = 100, max_value = 2000)
+    n_cores = st.slider('Numero de nucleos del CPU', min_value = 1, max_value = 10)
+    pc = st.slider('camara trasera ( MP)', min_value = 0, max_value = 19, step = 1)
+    px = st.slider('Resolucion de la pantalla (Ancho en px)', min_value = 100, max_value = 2000)
 
 with col3:
-    ram = st.slider('Memoria Ram (MB)', min_value = 0, max_value = 100)
+    ram = st.slider('Memoria Ram (MB)', min_value = 256, max_value = 4000)
+    sc_h = st.slider('Altura de la pantalla (cm)', min_value = 5, max_value = 19)
+    sc_w = st.slider('Ancho de la pantalla (cm)', min_value = 0, max_value = 18)
+    talk_time = st.slider('Duracion de la bateria bajo uso constante (Hrs)', min_value = 2, max_value = 20)
 
-    blue = st.selectbox('Tiene Bluetooth?', [0,1])
+    
