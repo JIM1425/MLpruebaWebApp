@@ -110,8 +110,8 @@ if st.button('Predecir'):
     )
 
     st.dataframe(input_data)
-    pipeline_data = pipeline.transform(input_data)
-    prediction = model.predict(pipeline_data)
+    pipelined_data = pipeline.transform(input_data)
+    prediction = model.predict(pipelined_data)
 
     if prediction[0] == 0:
         st.success('Bajo costo')
