@@ -6,9 +6,9 @@ import joblib
 
 st.set_page_config(page_title = 'MLpruebaWebApp', layout = 'wide')
 
-pipeline_path = '/workspaces/MLpruebaWebApp/artefacts/preprocessor/preprocessor.pkl'
-model_path = '/workspaces/MLpruebaWebApp/artefacts/model/svm.pkl'
-encoder_path = '/workspaces/MLpruebaWebApp/artefacts/preprocessor/encoder.pkl'
+pipeline_path = 'artefacts/preprocessor/preprocessor.pkl'
+model_path = 'artefacts/model/svm.pkl'
+encoder_path = 'artefacts/preprocessor/encoder.pkl'
 
 with open(pipeline_path, 'rb') as file1:
     print(file1.read(100))
